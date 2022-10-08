@@ -1,0 +1,116 @@
+.best {
+    margin-bottom: 150px;
+}
+.best_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 150px;
+}
+.best__video-wrapper {
+    max-width: 580px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.best__video {
+    width: 100%;
+    height: 390px;
+}
+.best__content {
+    max-width: 490px;
+    width: 100%;
+}
+.best__heading {
+    margin-bottom: 25px;
+}
+.best__desc {
+    margin-bottom: 50px;
+}
+.best__play-btn {
+    font-weight: 500;
+    font-size: 1.6em;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #1617DB;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+    background-color: transparent;
+    padding: 14px 25px;
+    &::before {
+        content: url(../img/play-btn.svg);
+        display: block;
+        background-color: #EEEEEE;
+        border: 1px solid #CDCDCD;
+        border-radius: 50%;
+        padding: 10px 14px 10px 17px;
+    }
+}
+.best__bottom {
+
+}
+.best__message-wrapper {
+    padding: 35px 68px;
+    max-width: 690px;
+    width: 100%;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    background-image: url(../img/message-bgi.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 90px) calc(150px);
+}
+.best__message {
+    margin-bottom: 30px;
+}
+.best__message-info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.best__message-author {
+
+}
+.best__message-author-name {
+    font-weight: 700;
+    font-size: 1.6em;
+    line-height: 130%;
+    margin-bottom: 2px;
+}
+.best__message-author-username {
+    font-weight: 400;
+    font-size: 1.4em;
+    line-height: 160%;
+    opacity: 0.7;
+}
+.best__message-author-img {
+    background-color: transparent;
+    width: 57px;
+}
+@include breakpoint-down(750px) {
+    .best_top {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+}
+@include breakpoint-down (550px) {
+    .best__message-wrapper {
+        padding: 20px;
+        background-position: calc(50% + 90px) calc(100px);
+    }
+    .best__video {
+        height: 250px;
+    }
+    .best__desc {
+        margin-bottom: 20px;
+    }
+    .best__heading {
+        margin-bottom: 15px;
+    }
+    .best {
+        margin-bottom: 50px;
+    }
+}

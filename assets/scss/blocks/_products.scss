@@ -1,0 +1,53 @@
+.products {
+    margin-bottom: 150px;
+}
+.container {
+}
+.products__subheading {
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #1617DB;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    &::before {
+        content: url(../img/hero-gallery-link-img.svg);
+        width: 16px;
+        height: 19px;
+        display: block;
+    }
+}
+.products__heading {
+    margin-bottom: 25px;
+}
+.products__desc {
+    margin-bottom: 70px;
+}
+.products__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.products__item {
+    max-width: 302px;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 55px;
+}
+.products__item-link {
+}
+.products__item-img {
+    width: 100%;
+    height: 100%;
+
+}
+@include breakpoint-down(550px) {
+    .products {
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,19 @@
+.toggler {
+}
+.toggler__line {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: black;
+    transition: all 0.4s;
+    flex-shrink: 0;
+}
+.toggler__top {
+    margin-bottom: 6px;
+
+}
+.toggler__center {
+    margin-bottom: 6px;
+}
+.toggler__bottom {
+}

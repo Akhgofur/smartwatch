@@ -1,0 +1,38 @@
+.primary-link {
+    font-weight: 600;
+    font-size: 1.6em;
+    line-height: 130%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    background-color: #1617DB;
+    border-radius: 6px;
+}
+.heading {
+    font-weight: 700;
+    font-size: 5.1em;
+    line-height: 120%;
+}
+.desc {
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 150%;
+}
+.title {
+    font-weight: 600;
+    font-size: 2.1em;
+    line-height: 32px;
+}
+@include breakpoint-down(750px) {
+    .primary-link {
+        padding: 12px 22px;
+    }
+}
+@include breakpoint-down(550px) {
+    .primary-link {
+        padding: 10px 15px;
+    }
+    .title {
+        line-height: 18px;
+    }
+}
